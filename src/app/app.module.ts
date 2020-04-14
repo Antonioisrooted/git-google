@@ -4,6 +4,8 @@ import { HttpModule } from '@angular/http';
 
 import { ProfileService } from './services/profile.service';
 
+import { FormsModule } from '@angular/forms'
+
 // import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './components/profile/profile.component';
@@ -17,7 +19,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     BrowserModule,
     // AppRoutingModule,
     // ProfileComponent
-    // FormsModule,
+    FormsModule,
     // HttpClientModule
     HttpModule
   ],
