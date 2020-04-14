@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
@@ -9,7 +9,7 @@ export class ProfileService {
   private clientid='d2649e66fe52c00ab7cd';
   private clientsecret='9cbfdf677fd9265b14c540c456a9eaab4e672222';
 
-  constructor(private http:Http) { 
+  constructor(private http: HttpClient) { 
     console.log("service in now ready!"); 
     this.username = 'Antonioisrooted';
   }
@@ -28,7 +28,7 @@ export class ProfileService {
 
   updateProfile(username:string){
     this.username = username;
-    
+
   }
 
 
@@ -41,3 +41,7 @@ export class ProfileService {
 // @Injectable({
 //   providedIn: 'root'
 // })
+
+// .map(res => res.json());
+
+// .map(result => result);

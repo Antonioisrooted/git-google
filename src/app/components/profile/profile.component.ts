@@ -11,17 +11,8 @@ profile:any[];
 repos:any[];
 username:string;
 
-  constructor(private profileService : ProfileService) {
-    // this.profileService.getProfileInfo().subscribe(profile =>{
-    //   console.log(profile);
-    //   this.profile = profile;
-    // });
-
-    // this.profileService.getProfileRepos().subscribe(repos => {
-    //   console.log(repos);
-    //   this.repos = repos;
-    // })
-   }
+  constructor(private profileService : ProfileService) {}
+   
 
    findProfile(){
      this.profileService.updateProfile(this.username);
@@ -40,3 +31,17 @@ username:string;
   }
 
 }
+
+
+
+// this.profileService.getProfileInfo().subscribe(profile =>{
+//   console.log(profile);
+//   this.profile = profile;
+// });
+
+// this.profileService.getProfileRepos().subscribe(repos => {
+//   console.log(repos);
+//   this.repos = repos;
+// })
+
+// .map(result => result);
