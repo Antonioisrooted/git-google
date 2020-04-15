@@ -40,7 +40,7 @@
             <div class="panel-heading">
                 <h3 class="panel-title">Repos</h3>
             </div>
-            <div class="panel-body" *ngFor="let repo of repos">
+            <div class="panel-body" *ngIf="let repo of repos">
                 <p class="clearfix">
                     {{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning pull-right">View project on github</a>
                 </p>
