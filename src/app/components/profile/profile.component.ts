@@ -7,9 +7,9 @@ import { ProfileService } from '../../services/profile.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-profile:any[];
-repos:any[];
-username:string;
+profile:any;
+repos:any;
+username:any = "Antonioisrooted";
 
   constructor(private profileService : ProfileService) {}
    
@@ -27,9 +27,9 @@ username:string;
     })
    }
 
-  ngOnInit(): void {
+  ngOnInit(): void { this.findProfile()
   }
-
+ 
 }
 
 
