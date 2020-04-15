@@ -17,12 +17,11 @@ export class ProfileService {
 
   constructor(private http: HttpClient) { 
     console.log("service in now ready!"); 
-    this.username = 'Antonioisrooted';
   }
 
   getProfileInfo(){
     return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientid + 
-    "&client_secret=" + this.clientsecret )
+    "&client_secret=" + this.clientsecret );
     // .map(res => res.json());
     // .map((res: Response) => res.json())
   }
@@ -30,7 +29,7 @@ export class ProfileService {
 
   getProfileRepos(){
     return this.http.get("https://api.github.com/users/" + this.username + "/repos?client_id=" + this.clientid + 
-    "&client_secret=" + this.clientsecret )
+    "&client_secret=" + this.clientsecret );
     // .map(res => res.json());
     // .map((res: Response) => res.json())
   }

@@ -16,7 +16,7 @@ username:any = "Antonioisrooted";
 
    findProfile(){
      this.profileService.updateProfile(this.username);
-     this.profileService.getProfileInfo().subscribe(profile =>{
+     this.profileService.getProfileInfo().subscribe(profile => {
       console.log(profile);
       this.profile = profile;
     });
