@@ -6,7 +6,8 @@
 .general{
     padding-left: 60px;
     padding-right: 60px;
-    background-color: azure;
+    background-color: rgb(238, 237, 237);
+    text-size-adjust: 15px;
 }
 img{
     height: 400px;
